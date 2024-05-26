@@ -1,0 +1,1088 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A323E392C01E21E00996FD2 /* TribeLeapCompanionWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A323E382C01E21E00996FD2 /* TribeLeapCompanionWatchAppApp.swift */; };
+		4A323E3B2C01E21E00996FD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A323E3A2C01E21E00996FD2 /* ContentView.swift */; };
+		4A323E3D2C01E21F00996FD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A323E3C2C01E21F00996FD2 /* Assets.xcassets */; };
+		4A323E402C01E21F00996FD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A323E3F2C01E21F00996FD2 /* Preview Assets.xcassets */; };
+		4A323E432C01E21F00996FD2 /* TribeLeapV2.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4A323E362C01E21E00996FD2 /* TribeLeapV2.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4A323E4A2C01E25E00996FD2 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A323E482C01E25700996FD2 /* WatchSessionManager.swift */; };
+		4A323E4C2C01E34C00996FD2 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A323E4B2C01E34C00996FD2 /* HealthManager.swift */; };
+		4A323E4E2C01E35E00996FD2 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A323E4D2C01E35E00996FD2 /* WorkoutManager.swift */; };
+		4A323E512C0231CA00996FD2 /* IOSSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A323E502C0231CA00996FD2 /* IOSSessionManager.swift */; };
+		4A323E552C023F8F00996FD2 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A323E542C023F8F00996FD2 /* WatchConnectivity.framework */; };
+		4A8B99612BF4BF6500E552B3 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B99602BF4BF6500E552B3 /* HealthManager.swift */; };
+		A385471E2BEFA10100BA35BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385471D2BEFA10100BA35BE /* AppDelegate.swift */; };
+		A38547202BEFA10100BA35BE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A385471F2BEFA10100BA35BE /* GameScene.sks */; };
+		A38547222BEFA10100BA35BE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A38547212BEFA10100BA35BE /* Actions.sks */; };
+		A385472B2BEFA10300BA35BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A385472A2BEFA10300BA35BE /* Assets.xcassets */; };
+		A385472E2BEFA10300BA35BE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A385472D2BEFA10300BA35BE /* Base */; };
+		A38547382BEFA10300BA35BE /* Trible_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547372BEFA10300BA35BE /* Trible_v2Tests.swift */; };
+		A38547422BEFA10300BA35BE /* Trible_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547412BEFA10300BA35BE /* Trible_v2UITests.swift */; };
+		A38547442BEFA10300BA35BE /* Trible_v2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547432BEFA10300BA35BE /* Trible_v2UITestsLaunchTests.swift */; };
+		A38547842BEFA17200BA35BE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547512BEFA17100BA35BE /* GameViewController.swift */; };
+		A38547852BEFA17200BA35BE /* CaloriesGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547532BEFA17100BA35BE /* CaloriesGenerator.swift */; };
+		A38547862BEFA17200BA35BE /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547542BEFA17100BA35BE /* Types.swift */; };
+		A38547872BEFA17200BA35BE /* ActionPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547562BEFA17100BA35BE /* ActionPrediction.swift */; };
+		A38547882BEFA17200BA35BE /* ExerciseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A38547572BEFA17100BA35BE /* ExerciseClassifier.mlmodel */; };
+		A38547892BEFA17200BA35BE /* ExerciseClassifier+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547582BEFA17100BA35BE /* ExerciseClassifier+FrameRate.swift */; };
+		A385478A2BEFA17200BA35BE /* ExerciseClassifier+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547592BEFA17100BA35BE /* ExerciseClassifier+Label.swift */; };
+		A385478B2BEFA17200BA35BE /* ExerciseClassifier+LabelCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385475A2BEFA17100BA35BE /* ExerciseClassifier+LabelCheck.swift */; };
+		A385478C2BEFA17200BA35BE /* ExerciseClassifier+PredictAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385475B2BEFA17100BA35BE /* ExerciseClassifier+PredictAction.swift */; };
+		A385478D2BEFA17200BA35BE /* ExerciseClassifier+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385475C2BEFA17100BA35BE /* ExerciseClassifier+Singleton.swift */; };
+		A385478E2BEFA17200BA35BE /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385475E2BEFA17100BA35BE /* Pose.swift */; };
+		A385478F2BEFA17200BA35BE /* Pose+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385475F2BEFA17100BA35BE /* Pose+Connection.swift */; };
+		A38547902BEFA17200BA35BE /* Pose+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547602BEFA17100BA35BE /* Pose+Empty.swift */; };
+		A38547912BEFA17200BA35BE /* Pose+Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547612BEFA17100BA35BE /* Pose+Landmark.swift */; };
+		A38547922BEFA17200BA35BE /* PerformanceReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547632BEFA17100BA35BE /* PerformanceReporter.swift */; };
+		A38547932BEFA17200BA35BE /* AVCaptureDevice+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547652BEFA17100BA35BE /* AVCaptureDevice+FrameRate.swift */; };
+		A38547942BEFA17200BA35BE /* AVCaptureDeviceInput+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547662BEFA17100BA35BE /* AVCaptureDeviceInput+Camera.swift */; };
+		A38547952BEFA17200BA35BE /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547672BEFA17100BA35BE /* AVCaptureVideoDataOutput+PixelFormat.swift */; };
+		A38547962BEFA17200BA35BE /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547682BEFA17100BA35BE /* VideoCapture.swift */; };
+		A38547972BEFA17200BA35BE /* VideoProcessingChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385476A2BEFA17100BA35BE /* VideoProcessingChain.swift */; };
+		A38547982BEFA17200BA35BE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385476C2BEFA17100BA35BE /* ViewModel.swift */; };
+		A38547992BEFA17200BA35BE /* Krungthep.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A385476F2BEFA17100BA35BE /* Krungthep.ttf */; };
+		A385479A2BEFA17200BA35BE /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A38547712BEFA17200BA35BE /* backgroundMusic.mp3 */; };
+		A385479B2BEFA17200BA35BE /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A38547722BEFA17200BA35BE /* coin.mp3 */; };
+		A385479C2BEFA17200BA35BE /* collision.wav in Resources */ = {isa = PBXBuildFile; fileRef = A38547732BEFA17200BA35BE /* collision.wav */; };
+		A385479D2BEFA17200BA35BE /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = A38547742BEFA17200BA35BE /* jump.wav */; };
+		A385479E2BEFA17200BA35BE /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547762BEFA17200BA35BE /* CGFloat+Ext.swift */; };
+		A385479F2BEFA17200BA35BE /* CGPoint+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547772BEFA17200BA35BE /* CGPoint+Ext.swift */; };
+		A38547A02BEFA17200BA35BE /* SKAction+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547782BEFA17200BA35BE /* SKAction+Ext.swift */; };
+		A38547A12BEFA17200BA35BE /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547792BEFA17200BA35BE /* SKTAudio.swift */; };
+		A38547A22BEFA17200BA35BE /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385477B2BEFA17200BA35BE /* GameOver.swift */; };
+		A38547A32BEFA17200BA35BE /* GameOverExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385477C2BEFA17200BA35BE /* GameOverExt.swift */; };
+		A38547A42BEFA17200BA35BE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385477D2BEFA17200BA35BE /* GameScene.swift */; };
+		A38547A52BEFA17200BA35BE /* GameSceneContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385477E2BEFA17200BA35BE /* GameSceneContactDelegate.swift */; };
+		A38547A62BEFA17200BA35BE /* GameSceneExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385477F2BEFA17200BA35BE /* GameSceneExt.swift */; };
+		A38547A72BEFA17200BA35BE /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547802BEFA17200BA35BE /* MainMenu.swift */; };
+		A38547A82BEFA17200BA35BE /* MainMenuExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547812BEFA17200BA35BE /* MainMenuExt.swift */; };
+		A38547AA2BEFA97E00BA35BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38547A92BEFA97E00BA35BE /* Main.storyboard */; };
+		A38547AC2BEFBE6C00BA35BE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38547AB2BEFBE6C00BA35BE /* CameraViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A323E412C01E21F00996FD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38547122BEFA10100BA35BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A323E352C01E21E00996FD2;
+			remoteInfo = "TribeLeapCompanionWatchApp Watch App";
+		};
+		A38547342BEFA10300BA35BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38547122BEFA10100BA35BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A38547192BEFA10100BA35BE;
+			remoteInfo = Trible_v2;
+		};
+		A385473E2BEFA10300BA35BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38547122BEFA10100BA35BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A38547192BEFA10100BA35BE;
+			remoteInfo = Trible_v2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A323E442C01E21F00996FD2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4A323E432C01E21F00996FD2 /* TribeLeapV2.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A323E362C01E21E00996FD2 /* TribeLeapV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TribeLeapV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A323E382C01E21E00996FD2 /* TribeLeapCompanionWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TribeLeapCompanionWatchAppApp.swift; sourceTree = "<group>"; };
+		4A323E3A2C01E21E00996FD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A323E3C2C01E21F00996FD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A323E3F2C01E21F00996FD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A323E482C01E25700996FD2 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		4A323E4B2C01E34C00996FD2 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		4A323E4D2C01E35E00996FD2 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		4A323E4F2C02316C00996FD2 /* TribeLeapCompanionWatchApp Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TribeLeapCompanionWatchApp Watch App.entitlements"; sourceTree = "<group>"; };
+		4A323E502C0231CA00996FD2 /* IOSSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSSessionManager.swift; sourceTree = "<group>"; };
+		4A323E522C023B5500996FD2 /* Trible-v2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Trible-v2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4A323E542C023F8F00996FD2 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		4A8B99602BF4BF6500E552B3 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = Trible_v2/HealthManager.swift; sourceTree = SOURCE_ROOT; };
+		4A8B99622BF516D500E552B3 /* Trible_v2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trible_v2.entitlements; sourceTree = "<group>"; };
+		A385471A2BEFA10100BA35BE /* TribeLeap_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TribeLeap_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A385471D2BEFA10100BA35BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A385471F2BEFA10100BA35BE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		A38547212BEFA10100BA35BE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		A385472A2BEFA10300BA35BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A385472D2BEFA10300BA35BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A38547332BEFA10300BA35BE /* TribeLeap_v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TribeLeap_v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38547372BEFA10300BA35BE /* Trible_v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trible_v2Tests.swift; sourceTree = "<group>"; };
+		A385473D2BEFA10300BA35BE /* TribeLeap_v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TribeLeap_v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38547412BEFA10300BA35BE /* Trible_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trible_v2UITests.swift; sourceTree = "<group>"; };
+		A38547432BEFA10300BA35BE /* Trible_v2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trible_v2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A38547512BEFA17100BA35BE /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A38547532BEFA17100BA35BE /* CaloriesGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesGenerator.swift; sourceTree = "<group>"; };
+		A38547542BEFA17100BA35BE /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		A38547562BEFA17100BA35BE /* ActionPrediction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionPrediction.swift; sourceTree = "<group>"; };
+		A38547572BEFA17100BA35BE /* ExerciseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ExerciseClassifier.mlmodel; sourceTree = "<group>"; };
+		A38547582BEFA17100BA35BE /* ExerciseClassifier+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+FrameRate.swift"; sourceTree = "<group>"; };
+		A38547592BEFA17100BA35BE /* ExerciseClassifier+Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+Label.swift"; sourceTree = "<group>"; };
+		A385475A2BEFA17100BA35BE /* ExerciseClassifier+LabelCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+LabelCheck.swift"; sourceTree = "<group>"; };
+		A385475B2BEFA17100BA35BE /* ExerciseClassifier+PredictAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+PredictAction.swift"; sourceTree = "<group>"; };
+		A385475C2BEFA17100BA35BE /* ExerciseClassifier+Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+Singleton.swift"; sourceTree = "<group>"; };
+		A385475E2BEFA17100BA35BE /* Pose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
+		A385475F2BEFA17100BA35BE /* Pose+Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Connection.swift"; sourceTree = "<group>"; };
+		A38547602BEFA17100BA35BE /* Pose+Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Empty.swift"; sourceTree = "<group>"; };
+		A38547612BEFA17100BA35BE /* Pose+Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Landmark.swift"; sourceTree = "<group>"; };
+		A38547632BEFA17100BA35BE /* PerformanceReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceReporter.swift; sourceTree = "<group>"; };
+		A38547652BEFA17100BA35BE /* AVCaptureDevice+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+FrameRate.swift"; sourceTree = "<group>"; };
+		A38547662BEFA17100BA35BE /* AVCaptureDeviceInput+Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDeviceInput+Camera.swift"; sourceTree = "<group>"; };
+		A38547672BEFA17100BA35BE /* AVCaptureVideoDataOutput+PixelFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoDataOutput+PixelFormat.swift"; sourceTree = "<group>"; };
+		A38547682BEFA17100BA35BE /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		A385476A2BEFA17100BA35BE /* VideoProcessingChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessingChain.swift; sourceTree = "<group>"; };
+		A385476C2BEFA17100BA35BE /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A385476F2BEFA17100BA35BE /* Krungthep.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Krungthep.ttf; sourceTree = "<group>"; };
+		A38547712BEFA17200BA35BE /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		A38547722BEFA17200BA35BE /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
+		A38547732BEFA17200BA35BE /* collision.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collision.wav; sourceTree = "<group>"; };
+		A38547742BEFA17200BA35BE /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		A38547762BEFA17200BA35BE /* CGFloat+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
+		A38547772BEFA17200BA35BE /* CGPoint+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Ext.swift"; sourceTree = "<group>"; };
+		A38547782BEFA17200BA35BE /* SKAction+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Ext.swift"; sourceTree = "<group>"; };
+		A38547792BEFA17200BA35BE /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		A385477B2BEFA17200BA35BE /* GameOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		A385477C2BEFA17200BA35BE /* GameOverExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverExt.swift; sourceTree = "<group>"; };
+		A385477D2BEFA17200BA35BE /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A385477E2BEFA17200BA35BE /* GameSceneContactDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneContactDelegate.swift; sourceTree = "<group>"; };
+		A385477F2BEFA17200BA35BE /* GameSceneExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneExt.swift; sourceTree = "<group>"; };
+		A38547802BEFA17200BA35BE /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		A38547812BEFA17200BA35BE /* MainMenuExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuExt.swift; sourceTree = "<group>"; };
+		A38547A92BEFA97E00BA35BE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A38547AB2BEFBE6C00BA35BE /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A323E332C01E21E00996FD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A323E552C023F8F00996FD2 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38547172BEFA10100BA35BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38547302BEFA10300BA35BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A385473A2BEFA10300BA35BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A323E372C01E21E00996FD2 /* TribeLeapCompanionWatchApp Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				4A323E4F2C02316C00996FD2 /* TribeLeapCompanionWatchApp Watch App.entitlements */,
+				4A323E382C01E21E00996FD2 /* TribeLeapCompanionWatchAppApp.swift */,
+				4A323E3A2C01E21E00996FD2 /* ContentView.swift */,
+				4A323E482C01E25700996FD2 /* WatchSessionManager.swift */,
+				4A323E4B2C01E34C00996FD2 /* HealthManager.swift */,
+				4A323E4D2C01E35E00996FD2 /* WorkoutManager.swift */,
+				4A323E3C2C01E21F00996FD2 /* Assets.xcassets */,
+				4A323E3E2C01E21F00996FD2 /* Preview Content */,
+			);
+			path = "TribeLeapCompanionWatchApp Watch App";
+			sourceTree = "<group>";
+		};
+		4A323E3E2C01E21F00996FD2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4A323E3F2C01E21F00996FD2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A323E532C023F8F00996FD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A323E542C023F8F00996FD2 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A38547112BEFA10100BA35BE = {
+			isa = PBXGroup;
+			children = (
+				A385471C2BEFA10100BA35BE /* Trible_v2 */,
+				A38547362BEFA10300BA35BE /* Trible_v2Tests */,
+				A38547402BEFA10300BA35BE /* Trible_v2UITests */,
+				4A323E372C01E21E00996FD2 /* TribeLeapCompanionWatchApp Watch App */,
+				A385471B2BEFA10100BA35BE /* Products */,
+				4A323E532C023F8F00996FD2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A385471B2BEFA10100BA35BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A385471A2BEFA10100BA35BE /* TribeLeap_v2.app */,
+				A38547332BEFA10300BA35BE /* TribeLeap_v2Tests.xctest */,
+				A385473D2BEFA10300BA35BE /* TribeLeap_v2UITests.xctest */,
+				4A323E362C01E21E00996FD2 /* TribeLeapV2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A385471C2BEFA10100BA35BE /* Trible_v2 */ = {
+			isa = PBXGroup;
+			children = (
+				4A323E522C023B5500996FD2 /* Trible-v2-Info.plist */,
+				4A8B99622BF516D500E552B3 /* Trible_v2.entitlements */,
+				A38547522BEFA17100BA35BE /* Controllers */,
+				A38547702BEFA17100BA35BE /* Fonts */,
+				A385476E2BEFA17100BA35BE /* ML */,
+				A38547822BEFA17200BA35BE /* Scenes */,
+				A38547752BEFA17200BA35BE /* Sound */,
+				A38547552BEFA17100BA35BE /* Types */,
+				A385477A2BEFA17200BA35BE /* Utils */,
+				A385471D2BEFA10100BA35BE /* AppDelegate.swift */,
+				A385471F2BEFA10100BA35BE /* GameScene.sks */,
+				A38547212BEFA10100BA35BE /* Actions.sks */,
+				A38547A92BEFA97E00BA35BE /* Main.storyboard */,
+				A385472C2BEFA10300BA35BE /* LaunchScreen.storyboard */,
+				A385472A2BEFA10300BA35BE /* Assets.xcassets */,
+			);
+			path = Trible_v2;
+			sourceTree = "<group>";
+		};
+		A38547362BEFA10300BA35BE /* Trible_v2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A38547372BEFA10300BA35BE /* Trible_v2Tests.swift */,
+			);
+			path = Trible_v2Tests;
+			sourceTree = "<group>";
+		};
+		A38547402BEFA10300BA35BE /* Trible_v2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A38547412BEFA10300BA35BE /* Trible_v2UITests.swift */,
+				A38547432BEFA10300BA35BE /* Trible_v2UITestsLaunchTests.swift */,
+			);
+			path = Trible_v2UITests;
+			sourceTree = "<group>";
+		};
+		A38547522BEFA17100BA35BE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A8B99602BF4BF6500E552B3 /* HealthManager.swift */,
+				A38547512BEFA17100BA35BE /* GameViewController.swift */,
+				A38547AB2BEFBE6C00BA35BE /* CameraViewController.swift */,
+				4A323E502C0231CA00996FD2 /* IOSSessionManager.swift */,
+				A38547622BEFA17100BA35BE /* Pose */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A38547552BEFA17100BA35BE /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				A38547532BEFA17100BA35BE /* CaloriesGenerator.swift */,
+				A38547542BEFA17100BA35BE /* Types.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		A385475D2BEFA17100BA35BE /* Action Classifier */ = {
+			isa = PBXGroup;
+			children = (
+				A38547562BEFA17100BA35BE /* ActionPrediction.swift */,
+				A38547572BEFA17100BA35BE /* ExerciseClassifier.mlmodel */,
+				A38547582BEFA17100BA35BE /* ExerciseClassifier+FrameRate.swift */,
+				A38547592BEFA17100BA35BE /* ExerciseClassifier+Label.swift */,
+				A385475A2BEFA17100BA35BE /* ExerciseClassifier+LabelCheck.swift */,
+				A385475B2BEFA17100BA35BE /* ExerciseClassifier+PredictAction.swift */,
+				A385475C2BEFA17100BA35BE /* ExerciseClassifier+Singleton.swift */,
+			);
+			path = "Action Classifier";
+			sourceTree = "<group>";
+		};
+		A38547622BEFA17100BA35BE /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				A385475E2BEFA17100BA35BE /* Pose.swift */,
+				A385475F2BEFA17100BA35BE /* Pose+Connection.swift */,
+				A38547602BEFA17100BA35BE /* Pose+Empty.swift */,
+				A38547612BEFA17100BA35BE /* Pose+Landmark.swift */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+		A38547642BEFA17100BA35BE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A38547632BEFA17100BA35BE /* PerformanceReporter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A38547692BEFA17100BA35BE /* Video Capture */ = {
+			isa = PBXGroup;
+			children = (
+				A38547652BEFA17100BA35BE /* AVCaptureDevice+FrameRate.swift */,
+				A38547662BEFA17100BA35BE /* AVCaptureDeviceInput+Camera.swift */,
+				A38547672BEFA17100BA35BE /* AVCaptureVideoDataOutput+PixelFormat.swift */,
+				A38547682BEFA17100BA35BE /* VideoCapture.swift */,
+			);
+			path = "Video Capture";
+			sourceTree = "<group>";
+		};
+		A385476B2BEFA17100BA35BE /* Video Processing Chain */ = {
+			isa = PBXGroup;
+			children = (
+				A385476A2BEFA17100BA35BE /* VideoProcessingChain.swift */,
+			);
+			path = "Video Processing Chain";
+			sourceTree = "<group>";
+		};
+		A385476D2BEFA17100BA35BE /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A385476C2BEFA17100BA35BE /* ViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A385476E2BEFA17100BA35BE /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				A385475D2BEFA17100BA35BE /* Action Classifier */,
+				A38547642BEFA17100BA35BE /* Utilities */,
+				A38547692BEFA17100BA35BE /* Video Capture */,
+				A385476B2BEFA17100BA35BE /* Video Processing Chain */,
+				A385476D2BEFA17100BA35BE /* View Model */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		A38547702BEFA17100BA35BE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A385476F2BEFA17100BA35BE /* Krungthep.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A38547752BEFA17200BA35BE /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				A38547712BEFA17200BA35BE /* backgroundMusic.mp3 */,
+				A38547722BEFA17200BA35BE /* coin.mp3 */,
+				A38547732BEFA17200BA35BE /* collision.wav */,
+				A38547742BEFA17200BA35BE /* jump.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		A385477A2BEFA17200BA35BE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A38547762BEFA17200BA35BE /* CGFloat+Ext.swift */,
+				A38547772BEFA17200BA35BE /* CGPoint+Ext.swift */,
+				A38547782BEFA17200BA35BE /* SKAction+Ext.swift */,
+				A38547792BEFA17200BA35BE /* SKTAudio.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A38547822BEFA17200BA35BE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A385477D2BEFA17200BA35BE /* GameScene.swift */,
+				A385477F2BEFA17200BA35BE /* GameSceneExt.swift */,
+				A385477E2BEFA17200BA35BE /* GameSceneContactDelegate.swift */,
+				A385477B2BEFA17200BA35BE /* GameOver.swift */,
+				A385477C2BEFA17200BA35BE /* GameOverExt.swift */,
+				A38547802BEFA17200BA35BE /* MainMenu.swift */,
+				A38547812BEFA17200BA35BE /* MainMenuExt.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A323E352C01E21E00996FD2 /* TribeLeapCompanionWatchApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A323E472C01E21F00996FD2 /* Build configuration list for PBXNativeTarget "TribeLeapCompanionWatchApp Watch App" */;
+			buildPhases = (
+				4A323E322C01E21E00996FD2 /* Sources */,
+				4A323E332C01E21E00996FD2 /* Frameworks */,
+				4A323E342C01E21E00996FD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TribeLeapCompanionWatchApp Watch App";
+			productName = "TribeLeapCompanionWatchApp Watch App";
+			productReference = 4A323E362C01E21E00996FD2 /* TribeLeapV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A38547192BEFA10100BA35BE /* TribeLeap_v2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38547472BEFA10300BA35BE /* Build configuration list for PBXNativeTarget "TribeLeap_v2" */;
+			buildPhases = (
+				A38547162BEFA10100BA35BE /* Sources */,
+				A38547172BEFA10100BA35BE /* Frameworks */,
+				A38547182BEFA10100BA35BE /* Resources */,
+				4A323E442C01E21F00996FD2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A323E422C01E21F00996FD2 /* PBXTargetDependency */,
+			);
+			name = TribeLeap_v2;
+			productName = Trible_v2;
+			productReference = A385471A2BEFA10100BA35BE /* TribeLeap_v2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A38547322BEFA10300BA35BE /* TribeLeap_v2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A385474A2BEFA10300BA35BE /* Build configuration list for PBXNativeTarget "TribeLeap_v2Tests" */;
+			buildPhases = (
+				A385472F2BEFA10300BA35BE /* Sources */,
+				A38547302BEFA10300BA35BE /* Frameworks */,
+				A38547312BEFA10300BA35BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A38547352BEFA10300BA35BE /* PBXTargetDependency */,
+			);
+			name = TribeLeap_v2Tests;
+			productName = Trible_v2Tests;
+			productReference = A38547332BEFA10300BA35BE /* TribeLeap_v2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A385473C2BEFA10300BA35BE /* TribeLeap_v2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A385474D2BEFA10300BA35BE /* Build configuration list for PBXNativeTarget "TribeLeap_v2UITests" */;
+			buildPhases = (
+				A38547392BEFA10300BA35BE /* Sources */,
+				A385473A2BEFA10300BA35BE /* Frameworks */,
+				A385473B2BEFA10300BA35BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A385473F2BEFA10300BA35BE /* PBXTargetDependency */,
+			);
+			name = TribeLeap_v2UITests;
+			productName = Trible_v2UITests;
+			productReference = A385473D2BEFA10300BA35BE /* TribeLeap_v2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A38547122BEFA10100BA35BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					4A323E352C01E21E00996FD2 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					A38547192BEFA10100BA35BE = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					A38547322BEFA10300BA35BE = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A38547192BEFA10100BA35BE;
+					};
+					A385473C2BEFA10300BA35BE = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A38547192BEFA10100BA35BE;
+					};
+				};
+			};
+			buildConfigurationList = A38547152BEFA10100BA35BE /* Build configuration list for PBXProject "TribeLeap_v2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A38547112BEFA10100BA35BE;
+			productRefGroup = A385471B2BEFA10100BA35BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A38547192BEFA10100BA35BE /* TribeLeap_v2 */,
+				A38547322BEFA10300BA35BE /* TribeLeap_v2Tests */,
+				A385473C2BEFA10300BA35BE /* TribeLeap_v2UITests */,
+				4A323E352C01E21E00996FD2 /* TribeLeapCompanionWatchApp Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A323E342C01E21E00996FD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A323E402C01E21F00996FD2 /* Preview Assets.xcassets in Resources */,
+				4A323E3D2C01E21F00996FD2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38547182BEFA10100BA35BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A385479D2BEFA17200BA35BE /* jump.wav in Resources */,
+				A38547202BEFA10100BA35BE /* GameScene.sks in Resources */,
+				A385479A2BEFA17200BA35BE /* backgroundMusic.mp3 in Resources */,
+				A385479C2BEFA17200BA35BE /* collision.wav in Resources */,
+				A38547AA2BEFA97E00BA35BE /* Main.storyboard in Resources */,
+				A385472B2BEFA10300BA35BE /* Assets.xcassets in Resources */,
+				A38547992BEFA17200BA35BE /* Krungthep.ttf in Resources */,
+				A38547222BEFA10100BA35BE /* Actions.sks in Resources */,
+				A385472E2BEFA10300BA35BE /* Base in Resources */,
+				A385479B2BEFA17200BA35BE /* coin.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38547312BEFA10300BA35BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A385473B2BEFA10300BA35BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A323E322C01E21E00996FD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A323E4A2C01E25E00996FD2 /* WatchSessionManager.swift in Sources */,
+				4A323E3B2C01E21E00996FD2 /* ContentView.swift in Sources */,
+				4A323E4E2C01E35E00996FD2 /* WorkoutManager.swift in Sources */,
+				4A323E392C01E21E00996FD2 /* TribeLeapCompanionWatchAppApp.swift in Sources */,
+				4A323E4C2C01E34C00996FD2 /* HealthManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38547162BEFA10100BA35BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A385478D2BEFA17200BA35BE /* ExerciseClassifier+Singleton.swift in Sources */,
+				A385478A2BEFA17200BA35BE /* ExerciseClassifier+Label.swift in Sources */,
+				A385478F2BEFA17200BA35BE /* Pose+Connection.swift in Sources */,
+				A38547AC2BEFBE6C00BA35BE /* CameraViewController.swift in Sources */,
+				A38547A82BEFA17200BA35BE /* MainMenuExt.swift in Sources */,
+				A38547A22BEFA17200BA35BE /* GameOver.swift in Sources */,
+				A38547872BEFA17200BA35BE /* ActionPrediction.swift in Sources */,
+				A38547972BEFA17200BA35BE /* VideoProcessingChain.swift in Sources */,
+				A38547A02BEFA17200BA35BE /* SKAction+Ext.swift in Sources */,
+				A38547982BEFA17200BA35BE /* ViewModel.swift in Sources */,
+				A38547842BEFA17200BA35BE /* GameViewController.swift in Sources */,
+				A38547852BEFA17200BA35BE /* CaloriesGenerator.swift in Sources */,
+				A38547912BEFA17200BA35BE /* Pose+Landmark.swift in Sources */,
+				A38547902BEFA17200BA35BE /* Pose+Empty.swift in Sources */,
+				A38547922BEFA17200BA35BE /* PerformanceReporter.swift in Sources */,
+				A38547A52BEFA17200BA35BE /* GameSceneContactDelegate.swift in Sources */,
+				A385479E2BEFA17200BA35BE /* CGFloat+Ext.swift in Sources */,
+				A38547862BEFA17200BA35BE /* Types.swift in Sources */,
+				A38547A62BEFA17200BA35BE /* GameSceneExt.swift in Sources */,
+				A38547A42BEFA17200BA35BE /* GameScene.swift in Sources */,
+				A38547A12BEFA17200BA35BE /* SKTAudio.swift in Sources */,
+				A385479F2BEFA17200BA35BE /* CGPoint+Ext.swift in Sources */,
+				A385478E2BEFA17200BA35BE /* Pose.swift in Sources */,
+				A38547952BEFA17200BA35BE /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */,
+				A385478C2BEFA17200BA35BE /* ExerciseClassifier+PredictAction.swift in Sources */,
+				A385478B2BEFA17200BA35BE /* ExerciseClassifier+LabelCheck.swift in Sources */,
+				A38547962BEFA17200BA35BE /* VideoCapture.swift in Sources */,
+				A38547942BEFA17200BA35BE /* AVCaptureDeviceInput+Camera.swift in Sources */,
+				4A323E512C0231CA00996FD2 /* IOSSessionManager.swift in Sources */,
+				A38547882BEFA17200BA35BE /* ExerciseClassifier.mlmodel in Sources */,
+				A38547A72BEFA17200BA35BE /* MainMenu.swift in Sources */,
+				A38547A32BEFA17200BA35BE /* GameOverExt.swift in Sources */,
+				A38547892BEFA17200BA35BE /* ExerciseClassifier+FrameRate.swift in Sources */,
+				A385471E2BEFA10100BA35BE /* AppDelegate.swift in Sources */,
+				A38547932BEFA17200BA35BE /* AVCaptureDevice+FrameRate.swift in Sources */,
+				4A8B99612BF4BF6500E552B3 /* HealthManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A385472F2BEFA10300BA35BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38547382BEFA10300BA35BE /* Trible_v2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38547392BEFA10300BA35BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38547442BEFA10300BA35BE /* Trible_v2UITestsLaunchTests.swift in Sources */,
+				A38547422BEFA10300BA35BE /* Trible_v2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A323E422C01E21F00996FD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A323E352C01E21E00996FD2 /* TribeLeapCompanionWatchApp Watch App */;
+			targetProxy = 4A323E412C01E21F00996FD2 /* PBXContainerItemProxy */;
+		};
+		A38547352BEFA10300BA35BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A38547192BEFA10100BA35BE /* TribeLeap_v2 */;
+			targetProxy = A38547342BEFA10300BA35BE /* PBXContainerItemProxy */;
+		};
+		A385473F2BEFA10300BA35BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A38547192BEFA10100BA35BE /* TribeLeap_v2 */;
+			targetProxy = A385473E2BEFA10300BA35BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A385472C2BEFA10300BA35BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A385472D2BEFA10300BA35BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A323E452C01E21F00996FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TribeLeapCompanionWatchApp Watch App/TribeLeapCompanionWatchApp Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TribeLeapCompanionWatchApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 96MWD9X4DC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "ini juga please kasih ajnds kabdjas kndah sdasd";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "please kasih ajndskabdjaskndahsdasd";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "Michael-Chrisandy-v2";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Chrisandy-v2.watchkitapp";
+				PRODUCT_NAME = TribeLeapV2;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		4A323E462C01E21F00996FD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TribeLeapCompanionWatchApp Watch App/TribeLeapCompanionWatchApp Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TribeLeapCompanionWatchApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 96MWD9X4DC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "ini juga please kasih ajnds kabdjas kndah sdasd";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "please kasih ajndskabdjaskndahsdasd";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "Michael-Chrisandy-v2";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Chrisandy-v2.watchkitapp";
+				PRODUCT_NAME = TribeLeapV2;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		A38547452BEFA10300BA35BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A38547462BEFA10300BA35BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A38547482BEFA10300BA35BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trible_v2/Trible_v2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96MWD9X4DC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Trible-v2-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "please allow miaw";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow dong plis";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ini juga plis";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Chrisandy-v2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A38547492BEFA10300BA35BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trible_v2/Trible_v2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96MWD9X4DC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Trible-v2-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "please allow miaw";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow dong plis";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ini juga plis";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Chrisandy-v2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A385474B2BEFA10300BA35BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96MWD9X4DC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Chrisandy-v2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TribeLeap_v2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TribeLeap_v2";
+			};
+			name = Debug;
+		};
+		A385474C2BEFA10300BA35BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96MWD9X4DC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Chrisandy-v2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TribeLeap_v2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TribeLeap_v2";
+			};
+			name = Release;
+		};
+		A385474E2BEFA10300BA35BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96MWD9X4DC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Chrisandy-v2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Trible_v2;
+			};
+			name = Debug;
+		};
+		A385474F2BEFA10300BA35BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96MWD9X4DC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Chrisandy-v2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Trible_v2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A323E472C01E21F00996FD2 /* Build configuration list for PBXNativeTarget "TribeLeapCompanionWatchApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A323E452C01E21F00996FD2 /* Debug */,
+				4A323E462C01E21F00996FD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38547152BEFA10100BA35BE /* Build configuration list for PBXProject "TribeLeap_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38547452BEFA10300BA35BE /* Debug */,
+				A38547462BEFA10300BA35BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38547472BEFA10300BA35BE /* Build configuration list for PBXNativeTarget "TribeLeap_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38547482BEFA10300BA35BE /* Debug */,
+				A38547492BEFA10300BA35BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A385474A2BEFA10300BA35BE /* Build configuration list for PBXNativeTarget "TribeLeap_v2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A385474B2BEFA10300BA35BE /* Debug */,
+				A385474C2BEFA10300BA35BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A385474D2BEFA10300BA35BE /* Build configuration list for PBXNativeTarget "TribeLeap_v2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A385474E2BEFA10300BA35BE /* Debug */,
+				A385474F2BEFA10300BA35BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A38547122BEFA10100BA35BE /* Project object */;
+}
