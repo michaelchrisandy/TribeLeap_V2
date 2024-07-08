@@ -1,3 +1,5 @@
+About this project : https://medium.com/@michael.chrisandy25/tribeleap-a-fitness-game-c3b7e65de1d4
+
 What's new?
 - Better motion classification
 - Feature to see yourself in camera
